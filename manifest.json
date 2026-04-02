@@ -3,6 +3,7 @@
   "name": "Gemini Sidebar",
   "version": "1.0",
   "description": "Quickly access Gemini from the Chrome sidebar",
+  "homepage_url": "https://github.com/tyhcool/gemini-sidebar",
   "icons": {
     "16": "icon.png",
     "32": "icon.png",
@@ -20,7 +21,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Geminiを開く",
+    "default_title": "Open Gemini",
     "default_icon": "icon.png"
   },
   "side_panel": {
