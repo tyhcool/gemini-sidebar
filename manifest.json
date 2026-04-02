@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Sidebar",
+  "version": "1.0",
+  "description": "Quickly access Gemini from the Chrome sidebar",
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "sidePanel",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Geminiを開く",
+    "default_icon": "icon.png"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
